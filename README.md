@@ -12,11 +12,16 @@ Overview of Jenkinsfile:
 
    Steps:
    AWS
-1. Create an IAM USER with Access Keys.
-2. Create an Amazon ECR Registry for the Docker image.
+1. Install AWS CLI.
+2. Create an IAM USER with Access Keys.
+3. Create an Amazon ECR Registry for the Docker image.
 
    Jenkins
-4. Insall Docker and Docker pipeline plugins.
-5. Install ECR plugin
-6. Store  AWS access keys(credentials)
-7. Install Docker Engine in Jenkins.
+4. Install Docker and Docker pipeline plugins.
+5. Install ECR plugin.
+6. Install AWS SDK.
+7. Add Docker user to docker group & reboot.
+8. Store  AWS access keys(credentials).
+9. Install Docker Engine in Jenkins.
+
+10. Run the pipeline.
